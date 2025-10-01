@@ -1,0 +1,53 @@
+name: Project Submission
+description: Submit your project to be reviewed in Tolong Refactor
+title: "[Submission] "
+labels: [submission]
+
+body:
+  - type: input
+    id: project-name
+    attributes:
+      label: Nama Project
+      description: Tulisin nama project lo di sini.
+      placeholder: Contoh: Todo App Sederhana
+    validations:
+      required: true
+
+  - type: input
+    id: repo-link
+    attributes:
+      label: Link Repository
+      description: Masukin link ke repo public GitHub lo.
+      placeholder: https://github.com/username/nama-project
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Deskripsi Singkat
+      description: Jelasin secara singkat project lo (1-3 kalimat).
+      placeholder: Contoh: "Todo app sederhana dengan React + Express untuk belajar fullstack."
+    validations:
+      required: true
+
+  - type: input
+    id: tech-stack
+    attributes:
+      label: Tech Stack
+      description: Tulisin tech stack utama yang lo pake.
+      placeholder: Contoh: React, Express, MongoDB
+
+  - type: textarea
+    id: setup
+    attributes:
+      label: Setup / Cara Jalanin
+      description: Ada cara khusus buat jalanin project lo? Tulis di sini.
+      placeholder: Contoh: `npm install && npm run dev`
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes (Opsional)
+      description: Ada hal yang lo pengen highlight atau minta kita fokusin pas review?
+      placeholder: Contoh: "Cek struktur folder gue, masih bingung best practice-nya."
